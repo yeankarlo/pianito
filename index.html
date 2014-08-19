@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Little Piano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+    <link href="css/jquery.mobile-1.3.2.min.css" rel="stylesheet">
+    
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script src="js/acciones.js"></script>        
+    
+    <!-- necesario*/ -->
+	<script src="phonegap.js"></script> -->
+    <style>
+		#principal {
+			position:absolute;
+			left:0;
+			top:0;
+			width:100%;
+		}
+		
+		#pantalla {
+			float:left;
+			width:100%;
+			height:25%;
+			background:#000;
+			text-align:center;
+			font-size:2em;
+			color:#CCC;
+			font-weight:bold;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+		}
+		
+		#teclado {
+			float:left;
+			width:100%;
+			height:75%;
+		}
+		
+		.nota {
+			position:relative;
+			float:left;
+			height:90%;
+			outline:#000 solid 1px;
+			background:#FFF;
+			width:14.28571428571429%;
+		}
+		
+		.textoNota {
+			position:relative;
+			top:80%;
+			text-align:center;
+			font-size:2em;
+			font-weight:bold;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+		}
+		
+		.tocada {
+			color:#6C0;
+			background:#666;
+			outline:solid 1px #00FF00;
+		}
+	</style>
+</head>
+
+<body>
+    <div data-role="page" id="page">	
+    	<div id="principal">
+        	<div id="pantalla" align="center">
+            	<h1>sPiano</h1>
+            </div>
+            <div id="teclado">
+            	<div id="C" class="nota">
+                	<div class="textoNota">
+                    	Do
+                    </div>
+                </div>
+                <div id="D" class="nota">
+                	<div class="textoNota">
+                    	Re
+                    </div>
+                </div>
+                <div id="E" class="nota">
+                	<div class="textoNota">
+                    	Mi
+                    </div>
+                </div>
+                <div id="F" class="nota">
+                	<div class="textoNota">
+                    	Fa
+                    </div>
+                </div>
+                <div id="G" class="nota">
+                	<div class="textoNota">
+                    	Sol
+                    </div>
+                </div>
+                <div id="A" class="nota">
+                	<div class="textoNota">
+                    	La
+                    </div>
+                </div>
+                <div id="B" class="nota">
+                	<div class="textoNota">
+                    	Si
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
